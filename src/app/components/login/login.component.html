@@ -1,0 +1,13 @@
+<form #miForm="ngForm" (ngSubmit)="sendLog(miForm)"> <!--T0dos los inputs que tengamos en el formulario se van a almacenar en ngForm y se van a mostrar con ngSubmit-->
+    <label class="form-label mt-4">Introduce tus credenciales</label>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="email" name="email" placeholder="name@example.com" ngModel>
+        <label for="floatingInput">User name</label>
+    </div>
+    <div class="form-floating">
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password"
+            autocomplete="off" ngModel>
+        <label for="floatingPassword">Password</label>
+    </div>
+    <button type="submit" class="btn btn-lg btn-primary mt-3">Ingresar</button>
+</form>
